@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS BATTLE</title>
+    <style>
+        html {
+            background-color: rgb(207, 67, 67);
+        }
+
+        body {
+            margin: 0;
+            background: #5AED9C;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 22px;
+            width: 400px;
+            height: 300px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background: #4B4D88;
+            border-radius: 50%;
+            margin: 16px;
+            margin-bottom: 3px
+        }
+
+        .b {
+            width: 60px;
+            height: 30px;
+            background: #4B4D88;
+            border-radius: 20px;
+            margin-bottom: -13px
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+
+        .d {
+            transform: rotate(90deg);
+        }
+
+        .dl {
+            transform: rotate(45deg);
+            margin-right: 7.5px;
+        }
+
+        .dr {
+            transform: rotate(-45deg);
+            margin-left: 7.5px;
+        }
+
+        .dr,
+        .dl {
+            margin-top: 45px;
+        }
+
+        .dt {
+            margin-bottom: -2px
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class='b d dl'></div>
+        <div class='b d dt'></div>
+        <div class='b d dr'></div>
+    </div>
+    <div>
+        <div class='b'></div>
+        <div class='circle'></div>
+        <div class='b'></div>
+    </div>
+</body>
+
+</html>
